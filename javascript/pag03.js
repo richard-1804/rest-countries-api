@@ -9,7 +9,6 @@ async function buscarDados() {
             }
 
             divDados.innerHTML = "Carregando...";
-            divResultados.style.display = "block";
 
             try {
                  
