@@ -1,6 +1,5 @@
 async function buscarDados() {
             const nomePais = document.getElementById('countryInput').value;
-            const divResultados = document.getElementById('results');
             const divDados = document.getElementById('countryData');
 
             if (!nomePais) {
