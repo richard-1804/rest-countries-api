@@ -31,17 +31,17 @@ async function buscarDados() {
 
 
                 divDados.innerHTML = `
-                    <div class="data-item"><span class="label"><strong>Nome Comum:</strong></span> ${country.name.common}</div>
+                    <div><strong>Nome Comum:</strong> ${country.name.common}</div>
 
-                    <div class="data-item"><span class="label"><strong>Nome Oficial:</strong></span> ${country.name.official}</div>
+                    <div><strong>Nome Oficial:</strong> ${country.name.official}</div>
 
-                    <div class="data-item"><span class="label"><strong>Capital:</strong></span> ${country.capital ? country.capital[0] : "N/A"}</div>
+                    <div><strong>Capital:</strong> ${country.capital ? country.capital[0] : "N/A"}</div>
 
-                    <div class="data-item"><span class="label"><strong>População:</strong></span> ${country.population.toLocaleString('pt-BR')}</div>
+                    <div><strong>População:</strong> ${country.population.toLocaleString('pt-BR')}</div>
 
-                    <div class="data-item"><span class="label"><strong>Moeda:</strong></span> ${moedas}</div>
+                    <div><strong>Moeda:</strong> ${moedas}</div>
 
-                    <div class="data-item"><span class="label"><strong>Línguas:</strong></span> ${linguas}</div>
+                    <div><strong>Línguas:</strong> ${linguas}</div>
 
                     <img src="${country.flags.png}" alt="Bandeira" width="150">`;
 
