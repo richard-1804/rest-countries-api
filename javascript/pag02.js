@@ -1,11 +1,11 @@
-function BuscarPaís() {
+async function BuscarPaís() {
             var nome = document.getElementById("input-pais").value;
             var div = document.querySelector('.resultado');
 
            
             div.innerHTML = "Carregando...";
 
-            fetch("https://restcountries.com/v3.1/name/" + nome)
+        await fetch("https://restcountries.com/v3.1/name/" + nome)
                 .then(function(resposta) {
                     if (resposta.ok) {
                         return resposta.json();
